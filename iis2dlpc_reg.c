@@ -1710,6 +1710,7 @@ int32_t iis2dlpc_pin_int1_route_set(const stmdev_ctx_t *ctx,
 
   if (ret == 0)
   {
+	// `interrupts_enable` is set to ENABLE when at least one of the int1/int2 events is active 
     if ((ctrl5_int2_pad_ctrl.int2_sleep_state
          | ctrl5_int2_pad_ctrl.int2_sleep_chg
          | val->int1_tap
@@ -1787,6 +1788,7 @@ int32_t iis2dlpc_pin_int2_route_set(const stmdev_ctx_t *ctx,
 
   if (ret == 0)
   {
+	// `interrupts_enable` is set to ENABLE when at least one of the int1/int2 events is active 
     if ((val->int2_sleep_state
          | val->int2_sleep_chg
          | ctrl4_int1_pad.int1_tap
