@@ -82,7 +82,7 @@ This directory contains the IIS2DLPC component drivers.
 
 </div>
 
-<input type="checkbox" id="collapse-section5" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section5" aria-hidden="true">
 <label for="collapse-section5" aria-hidden="true">V2.1.0 / 07-Jul-2025</label>
 <div>
 
@@ -96,6 +96,22 @@ This directory contains the IIS2DLPC component drivers.
 ##
 
 </div>
+
+<input type="checkbox" id="collapse-section6" checked aria-hidden="true">
+<label for="collapse-section6" aria-hidden="true">V2.2.0 / 07-Oct-2025</label>
+<div>
+
+## Main changes
+
+- Added checks after reads to avoid write random content on pointers
+- Fix sensitivity values for LSB to mg conversion
+- Added comment to specify the actions of 'iis2dlpc_pin_int1_route_set' and 'iis2dlpc_pin_int2_route_set'
+- Adding CODE_OF_CONDUCT.md and SECURITY.md
+
+##
+
+</div>
+
 :::
 
 
